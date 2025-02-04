@@ -230,7 +230,7 @@
                 <div class="project-layer">
                     <h4>Resume-Builder</h4>
                     <p>A user-friendly platform for creating professional resumes with ease. </p>
-                   <a href="https://github.com/thakur7071/Resume-Builder-frontend" target="_blank">  <i class="fa-solid fa-up-right-from-square"></i></a>
+                   <a href="https://github.com/thakur7071/Resume-Builder-Frontend-" target="_blank">  <i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
 
@@ -292,19 +292,24 @@
     <!--Contact Section-->
     <section class="contact" id="contact">
         <h2 class="heading">Contact<span>Me</span></h2>
-        <form action="#">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="49892897-1ac6-4428-9584-80bce99d8357">
+        
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
             </div>
+        
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" name="phone" placeholder="Mobile Number" required>
+                <input type="text" name="subject" placeholder="Email Subject" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
+        
     </section>
 
     <!--Footer-->
